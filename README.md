@@ -11,8 +11,15 @@ Projeto tv\
   Atualizar apps da TV.bat     atalho para ferramentas-tv\atualizar-apps.ps1
 ```
 
-Precisa de Python 3, do OpenSSH do Windows e de a TV ter sido instalada uma vez com `free-my-tv\webos\install.py`
-(que guarda a chave do Developer Mode em `%USERPROFILE%\.ssh`, nunca neste repositório).
+**Use com a minha versão do Free My TV**, branch [`minha-tv-lg`](https://github.com/joaobrandl/free-my-tv/tree/minha-tv-lg)
+(`git clone -b minha-tv-lg https://github.com/joaobrandl/free-my-tv.git`): alguns scripts usam funções que só existem
+nela (a chave reaproveitada quando o IP muda, `build.py --langs`).
+
+Precisa de Python 3 (os `.ps1` e `.bat` procuram em `%LOCALAPPDATA%\Programs\Python\Python312\python.exe`, onde o
+`winget install Python.Python.3.12` instala), do OpenSSH do Windows e de a TV ter sido instalada uma vez com
+`free-my-tv\webos\install.py` (que guarda a chave do Developer Mode em `%USERPROFILE%\.ssh`, nunca neste repositório).
+Para a TV ficar acessível pelo PC, o cabo de rede dela vai na porta de rede do PC, com o compartilhamento de internet
+do Windows ligado (o modem que uso isola os aparelhos entre si).
 
 | Arquivo | Para que serve |
 |---|---|
