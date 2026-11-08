@@ -1,0 +1,5 @@
+# Fica so neste PC: o MAC da TV, o registro das renovacoes e arquivos temporarios
+*.local*
+renovacao.log
+__pycache__/
+nul
