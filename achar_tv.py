@@ -19,7 +19,7 @@ import os
 
 def _tv_mac():
     """O MAC do cabo da TV, de tv-mac.local.txt (ao lado deste arquivo, fora do Git) ou da variavel TV_MAC, no formato
-    14-c9-13-xx-xx-xx (ipconfig/arp -a mostram assim). Sem ele, vale o primeiro aparelho que responder na rede do cabo
+    aa-bb-cc-dd-ee-ff (arp -a mostra assim). Sem ele, vale o primeiro aparelho que responder na rede do cabo
     (na pratica, so a TV esta ali)."""
     mac = os.environ.get('TV_MAC', '')
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tv-mac.local.txt')
